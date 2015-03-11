@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>{% block title %}Questionnaire{% endblock title %}</title>
+    
+   <!-- <link rel="stylesheet" href="/static/bootstrap/style.css" type="text/css"/>-->
+   <link rel="stylesheet" href="/static/bootstrap/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/static/questionnaire.css"></script>
+    <script src="//api.html5media.info/1.1.8/html5media.min.js"></script>
+    
+    <style type="text/css">
+    {% block styleextra %}
+        
+    {% endblock %}
+    </style>
+    
+    {% block headextra %}
+    {% endblock %}
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="page-header">
+                <h3>CLT asasLanguage Testing</h3>
+            </div>
+
+            <div class="row">
+                <div class="span1">&nbsp;</div>
+                <div class="span14">
+                    {% block content %}
+                    
+                    {% endblock %}
+                </div>
+                <div class="span1">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

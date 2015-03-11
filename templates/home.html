@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <html lang="en">
+    
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>CLT Language Testing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="/static/bootstrap/styles.css" type="text/css"/>
+        <link rel="stylesheet" href="/static/bootstrap/bootstrap.css" type="text/css"/>
+
+ 
+    
+    
+    <style type="text/css">
+    {% block styleextra %}
+        <link rel="stylesheet" href="/static/questionnaire.css"></script>
+        <script src="//api.html5media.info/1.1.8/html5media.min.js"></script>
+        <link rel="stylesheet" href="/static/bootstrap/bootstrap.min.css" type="text/css"/>
+    {% endblock %}
+    </style>
+    
+    {% block headextra %}
+    {% endblock %}
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top header">
+    <div class="col-md-12">
+        <div class="navbar-header">
+          
+          <a href="#" class="navbar-brand">CLT Language Testing</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse1">
+          <i class="glyphicon glyphicon-search"></i>
+          </button>
+      
+        </div>
+     </div> 
+</nav>
+<div class="navbar navbar-default" id="subnav">
+    <div class="col-md-12">
+
+        <div class="collapse navbar-collapse" id="navbar-collapse2">
+          <ul class="nav navbar-nav navbar-right">
+             <li class="active"><a href="#">Home</a></li>
+             <li><a href="/login" role="button" data-toggle="modal">Login</a></li>
+             <li><a href="" role="button" data-toggle="modal">Languages</a></li>
+           </ul>
+        </div>  
+     </div> 
+</div>
+
+<!--main-->
+<div class="container" id="main">
+    {% block content %}
+    <div class="row">
+        <div class="jumbotron">
+            <h2>Welcome to CLT Language Testing</h2>
+            <p><a class="btn btn-success pull-left" href="/login">Login to start!</a></button></p>
+
+        </div>
+
+
+        
+    </div>
+    {% endblock %}
+</div>
+<!--end main-->
+
+<hr>
+    <div class="col-md-12 text-center"><p><a href="http://clt.manoa.hawaii.edu" target="_ext">Center for Language and Technology</a><br>University of Hawai'i</a></p></div>
+    <hr>
+
+</body>
+</html>
